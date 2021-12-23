@@ -12,9 +12,9 @@ https://arxiv.org/abs/1312.6114
   Use stochastic gradient method for traning model, we can define loss function like that
   <p align="center"> <img src="./img1/equation (1).png" alt="MLE" width="40%" height="40%"/> </p> 
   
-  So, w can be updated by using loss function gradient and get converged 'W'  
-  
+  So, 'W' can be updated by using loss function gradient and get converged 'W'  
   When on network's input set is X, and predicted output set is Y', we can define network model as P(Y = Y' | X, W)
+  
   At first, i thought that if i use MLE, model wouldn't be trained because MLE does not use predicted value 
   But, that mathematical expression includes predicted value.
   
