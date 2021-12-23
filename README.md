@@ -1,8 +1,9 @@
-# Generative_model
+In this repository, i implement generative model by refering to paper.  
+Use pytorch and tensorflow for implementing network.
 
-organize contents and make deep learning network in paper.  
-use pytorch for implementing network.  
+# VAE
+Auto-Encoding Variational Bayes: https://arxiv.org/abs/1312.6114
 
-## VAE
 
-## GAN
+# GAN
+Generative Adversarial Networks: https://arxiv.org/abs/1406.2661
