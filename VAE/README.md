@@ -21,7 +21,7 @@ https://arxiv.org/abs/1312.6114
   But, that mathematical expression includes predicted value.
   
   * regression form
-  <p align="center"> <img src="./img1/equation(3).png" alt="MLE" width="20%" height="20%"/> </p> 
+  <p align="center"> <img src="./img1/equation(3).png" alt="MLE" width="70%" height="70%"/> </p> 
   
   * classification form
   <p align="center"> <img src="./img1/equation(4).png" alt="MLE" width="100%" height="100%"/> </p> 
