@@ -55,5 +55,8 @@ X set size is N and, sampling 'M' datapoints for estimating loss function.
 
 Use calculated loss function and, calculated gradient. This is the all process for getting **monte carlo gradient estimation of loss function**
 
+## reparametrization trick
+
+
 
 ## Train order
