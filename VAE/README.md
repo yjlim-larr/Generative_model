@@ -10,21 +10,23 @@ https://arxiv.org/abs/1312.6114
   <p align="center"> <img src="./img1/equation.png" alt="MLE" width="20%" height="20%"/> </p> 
   
   Use stochastic gradient method for traning model, we can define loss function like that
-  <p align="center"> <img src="./img1/equation(1).png" alt="MLE" width="20%" height="20%"/> </p> 
+  <p align="center"> <img src="./img1/equation (1).png" alt="MLE" width="20%" height="20%"/> </p> 
   
   So, w can be updated by using loss function gradient and get converged 'W'  
   
   When on network's input set is X, and output set is Y, we can define network model as
-  <p align="center"> <img src="./img1/equation(2).png" alt="MLE" width="20%" height="20%"/> </p> 
+  <p align="center"> <img src="./img1/equation (2).png" alt="MLE" width="20%" height="20%"/> </p> 
   
   At first, i thought that if i use MLE, model wouldn't be trained because MLE does not use predicted value 
   But, that mathematical expression includes predicted value.
   
   * regression form
-  <p align="center"> <img src="./img1/equation(3).png" alt="MLE" width="70%" height="70%"/> </p> 
+  <p align="center"> <img src="./img1/equation (3).png" alt="MLE" width="70%" height="70%"/> </p> 
   
   * classification form
-  <p align="center"> <img src="./img1/equation(4).png" alt="MLE" width="100%" height="100%"/> </p> 
+  <p align="center"> <img src="./img1/equation (4).png" alt="MLE" width="100%" height="100%"/> </p> 
+  
+  
     
 ### 2. MAP
   
