@@ -33,7 +33,7 @@ using **Monte carlo gradient estimator** for caculating loss function gradient. 
 <p align="center"> <img src="./img1/equation8.png" alt="MLE" width="100%" height="100%"/> </p> 
 
 And for making differentiable funciton, transform q(z|x).
-<p align="center"> <img src="./img1/equation9.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation9.png" alt="MLE" width="30%" height="30%"/> </p> 
 Because, q(z|x) is not differentiable. To explain this detail, we use z that is sampled from q(z|x).
 But there is no back propagation of randomly sampling because randomly sampling is not differentiable operation.  
 
