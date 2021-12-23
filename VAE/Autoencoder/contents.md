@@ -29,16 +29,26 @@ loss function is like that
 <p align="center"> <img src="./img1/equation7.png" alt="MLE" width="20%" height="20%"/> </p> 
 
 # Calculate loss function gradient
-using monte carlo gradient estimator for caculating loss function gradient. For example 
+using **monte carlo gradient estimator** for caculating loss function gradient. For example 
 <p align="center"> <img src="./img1/equation8.png" alt="MLE" width="20%" height="20%"/> </p> 
 
 And for making differentiable funciton, transform q(z|x).
 <p align="center"> <img src="./img1/equation9.png" alt="MLE" width="20%" height="20%"/> </p> 
-Because, q(z|x) is not differentiable. 
+Because, q(z|x) is not differentiable. In this paper, it is called reparameterization trick. To explain this detail, we use z that is sampled from q(z|x).
+But there is no back propagation of randomly sampling because randomly sampling is not differentiable operation.  
+
+
+For backpropagtion, paper use indirectly random sampling by using **epsilon ~ N(0,1)**. z is calculated as follows.
+<p align="center"> <img src="./img1/equation10.png" alt="MLE" width="20%" height="20%"/> </p> 
+By using this form, we can calculate the effect of mu and sigma to 'z'
+
+So the main form of approximation to first term in ELBO is like that
+<p align="center"> <img src="./img1/equation11.png" alt="MLE" width="20%" height="20%"/> </p> 
+
+There is two version of approximation of ELBO
+1) first is to consider kl-divergence, and 2) the other on is not to consider Kl-divergeonce. Because KL-divergence in ELBO can be integrated analytically, so only the expected reconstruction error requires estimation by sampling.
+<p align="center"> <img src="./img1/equation12.png" alt="MLE" width="20%" height="20%"/> </p> 
 
 
 
-# Train method
 ## Train order
-
-## reparameterization trick
