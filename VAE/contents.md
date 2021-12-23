@@ -73,4 +73,4 @@
  Decoder is to make target image by using latent code made by encoder. 
  
 ## 4. What is differnece between GAN and VAE ?
- VAE's encoder function is 
+ 
