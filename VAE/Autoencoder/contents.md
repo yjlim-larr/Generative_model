@@ -58,7 +58,7 @@ Use calculated loss function and, calculated gradient. This is the all process f
 ## reparametrization trick
 Becuase of transform q(z|x), lower bound estimation is defined like that, 
 <p align="center"> <img src="./img1/equation15.png" alt="MLE" width="100%" height="100%"/> </p>
-**z is sampled L times from one image x^(i)**
+z is sampled L times from one image x^(i)
 
 If we use **gaussian distribution q(z|x) ~ N(mu, sigma^2)**
 we can more easily calculate loss function
