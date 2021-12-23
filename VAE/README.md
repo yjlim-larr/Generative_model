@@ -24,7 +24,7 @@ https://arxiv.org/abs/1312.6114
   <p align="center"> <img src="./img1/equation(3).png" alt="MLE" width="20%" height="20%"/> </p> 
   
   * classification form
-  <p align="center"> <img src="./img1/equation(4).png" alt="MLE" width="20%" height="20%"/> </p> 
+  <p align="center"> <img src="./img1/equation(4).png" alt="MLE" width="100%" height="100%"/> </p> 
     
 ### 2. MAP
   
