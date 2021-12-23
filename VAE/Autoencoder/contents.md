@@ -28,4 +28,17 @@ if 1) has high value, it has high probability which decoder ouptut same image to
 loss function is like that
 <p align="center"> <img src="./img1/equation7.png" alt="MLE" width="20%" height="20%"/> </p> 
 
+# Calculate loss function gradient
+using monte carlo gradient estimator for caculating loss function gradient. For example 
+<p align="center"> <img src="./img1/equation8.png" alt="MLE" width="20%" height="20%"/> </p> 
+
+And for making differentiable funciton, transform q(z|x).
+<p align="center"> <img src="./img1/equation9.png" alt="MLE" width="20%" height="20%"/> </p> 
+Because, q(z|x) is not differentiable. 
+
+
+
 # Train method
+## Train order
+
+## reparameterization trick
