@@ -26,11 +26,11 @@ if 1) has high value, it has high probability which decoder ouptut same image to
 2) means "regularization"
 
 loss function is like that
-<p align="center"> <img src="./img1/equation7.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation7.png" alt="MLE" width="30%" height="30%"/> </p> 
 
 # Calculate loss function gradient
 using **Monte carlo gradient estimator** for caculating loss function gradient. For example 
-<p align="center"> <img src="./img1/equation8.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation8.png" alt="MLE" width="100%" height="100%"/> </p> 
 
 And for making differentiable funciton, transform q(z|x).
 <p align="center"> <img src="./img1/equation9.png" alt="MLE" width="70%" height="70%"/> </p> 
@@ -42,7 +42,7 @@ For backpropagtion, paper use indirectly random sampling by using **epsilon ~ N(
 By using this form, we can calculate the effect of mu and sigma to 'z'
 
 So the main form of approximation to first term in loss function is like that
-<p align="center"> <img src="./img1/equation11.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation11.png" alt="MLE" width="100%" height="100%"/> </p> 
 
 There is two version of approximation of loss function
 1) First is to consider kl-divergence, and  
@@ -57,12 +57,12 @@ Use calculated loss function and, calculated gradient. This is the all process f
 
 ## reparametrization trick
 Becuase of transform q(z|x), lower bound estimation is defined like that, 
-<p align="center"> <img src="./img1/equation15.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img1/equation15.png" alt="MLE" width="100%" height="100%"/> </p>
 **z is sampled L times from one image x^(i)**
 
 If we use **gaussian distribution q(z|x) ~ N(mu, sigma^2)**
 we can more easily calculate loss function
-<p align="center"> <img src="./img1/equation16.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img1/equation16.png" alt="MLE" width="100%" height="100%"/> </p>
 
 ## Appendix B: calculate kl-divergence when gaussian case
 
