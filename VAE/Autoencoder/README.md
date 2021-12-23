@@ -65,7 +65,8 @@ we can more easily calculate loss function
 <p align="center"> <img src="./img1/equation16.png" alt="MLE" width="70%" height="70%"/> </p>
 
 ## Appendix B: calculate kl-divergence when gaussian case
+epsilon is N(0,1), so p(z) is N(0, 1). Therefore, 
 <p align="center"> <img src="./img1/equation18.png" alt="MLE" width="50%" height="50%"/> </p>
-epsilon is N(0,1), so p(z) is N(0, 1)  
 
+And we choose arbitary probability distribution as gaussian distribution, so
 <p align="center"> <img src="./img1/equation17.png" alt="MLE" width="70%" height="70%"/> </p>
