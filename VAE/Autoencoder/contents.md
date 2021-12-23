@@ -65,6 +65,4 @@ we can more easily calculate loss function
 <p align="center"> <img src="./img1/equation16.png" alt="MLE" width="100%" height="100%"/> </p>
 
 ## Appendix B: calculate kl-divergence when gaussian case
-
-
-## Train order
+<p align="center"> <img src="./img1/equation17.png" alt="MLE" width="100%" height="100%"/> </p>
