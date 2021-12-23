@@ -10,8 +10,9 @@
   VAE goal is to train P(X|theta)'s "theta" for making output image which we want to focus such as target image.
   
   
-  
 ## 2. Traditional probabilistic model training method 
+
+
 ### 2-1) MLE  
   If set X is given like **X = {x1, x2, ..., xn}**, we can define P(X) which probabiltiy of sampling set X is max.  
   We make P(X) by using neural network and, define that weight as 'W', so we can write it as P(X|W).    
@@ -33,6 +34,7 @@
 
   * classification form
   <p align="center"> <img src="./img1/equation (4).png" alt="MLE" width="60%" height="60%"/> </p> 
+  
   
   
 ### 2-2) MAP
@@ -64,11 +66,10 @@
   
   To implement VAE, paper suggest encoder and decoder method. So in this VAE code, i use encoder, decoder method to implement VAE.
   
-### Encoder
+### 3-1) Encoder
   Encoder is defined q(z|x) in VAE, and its fuction is sampling z from x for making relationship x and z. So we do not need to randomly match x and z for training. It solves the problem of training network by using MLE method.   
   
-  
-### Decoder
+### 3-2) Decoder
  Decoder is to make target image by using latent code made by encoder. 
  
 ## 4. What is differnece between GAN and VAE ?
