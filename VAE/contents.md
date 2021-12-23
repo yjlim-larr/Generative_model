@@ -2,17 +2,17 @@
 1) Auto-Encoding Variational Bayes : https://arxiv.org/abs/1312.6114
 2) beta-VAE: https://openreview.net/forum?id=Sy2fzU9gl
 
-## abstract
+## 1. summary
   **P(X)** : It is the distribution that explain what is X. For example we want to make dog image generator. P(X) should have high value when X = "dog image". But it has low value when X = "not dog image".  
   
   **P(X|theta)** : Theta is network weight, so P(X|theta) means deep network.  
   
-  **VAE goal is to train P(X|theta)'s "theta" for making output image which we want to focus such as target image.**
-
+  VAE goal is to train P(X|theta)'s "theta" for making output image which we want to focus such as target image.
   
   
-## Traditional probabilistic model training method 
-### 1. MLE  
+  
+## 2. Traditional probabilistic model training method 
+### 2-1) MLE  
   If set X is given like **X = {x1, x2, ..., xn}**, we can define P(X) which probabiltiy of sampling set X is max.  
   We make P(X) by using neural network and, define that weight as 'W', so we can write it as P(X|W).    
 
@@ -35,7 +35,7 @@
   <p align="center"> <img src="./img1/equation (4).png" alt="MLE" width="60%" height="60%"/> </p> 
   
   
-### 2. MAP
+### 2-2) MAP
   MAP use bayesian rule
   <p align="center"> <img src="./img1/equation (5).png" alt="MLE" width="40%" height="40%"/>
 
@@ -48,7 +48,7 @@
   
   
   
-## What is differnece VAE and MAP, MLE ?
+## 3. What is differnece between VAE and MAP, MLE ?
   Why use variational inference for training in VAE? Why just use MLE for training that model?  
   For example, imagine making random latent vector z and matching it 'x'
   
@@ -62,12 +62,14 @@
   
   So, We use sampling function for giving relationship between z and x. 
   
-  To implement VAE, we 
+  To implement VAE, paper suggest encoder and decoder method. So in this VAE code, i use encoder, decoder method to implement VAE.
   
 ### Encoder
   Encoder is defined q(z|x) in VAE, and its fuction is sampling z from x for making relationship x and z. So we do not need to randomly match x and z for training. It solves the problem of training network by using MLE method.   
   
   
 ### Decoder
- Decoder is to make target image by using latent code made by encoder. It is the generator.
-  
+ Decoder is to make target image by using latent code made by encoder. 
+ 
+## 4. What is differnece between GAN and VAE ?
+ VAE's encoder function is 
