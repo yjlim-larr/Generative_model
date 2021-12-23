@@ -35,3 +35,5 @@ https://arxiv.org/abs/1312.6114
   We can summarize MAP that is "MLE plus constraints" on P(W). Calculating w by using MAP is same to calculating w by using MLE "when w is regularized."
   <p align="center"> <img src="./img1/equation (6).png" alt="MLE" width="70%" height="70%"/> </p> 
   
+## loss function in VAE
+  
