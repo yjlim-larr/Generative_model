@@ -5,9 +5,9 @@ infoGAN
 DCGAN  
 
 
-# abstract
+# summary
 
-# 
+# loss function
 
 # Problem
 
