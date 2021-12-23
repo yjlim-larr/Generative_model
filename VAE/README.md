@@ -27,4 +27,13 @@ https://arxiv.org/abs/1312.6114
   
     
 ### 2. MAP
+  MAP use bayesian rule
+  <p align="center"> <img src="./img1/equation (5).png" alt="MLE" width="20%" height="20%"/>
+  
+  Its goal is to maximize P(w|X), so it is same to maximize P(X|w) just like MLE.  
+  But it has difference with MLE that MAP consider probability distribution P(w) when maximize P(X|w)  
+  MLE consider P(w) is uniform distribution, but MAP doesn't, so Those two method's results are different. 
+  
+  We can summarize MAP that is "MLE plus constraints" on P(W). Calculating w by using MAP is same to calculating w by using MLE "when w is regularized."
+  <p align="center"> <img src="./img1/equation (6).png" alt="MLE" width="70%" height="70%"/> </p> 
   
