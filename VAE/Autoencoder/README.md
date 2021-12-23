@@ -66,3 +66,6 @@ we can more easily calculate loss function
 
 ## Appendix B: calculate kl-divergence when gaussian case
 <p align="center"> <img src="./img1/equation17.png" alt="MLE" width="70%" height="70%"/> </p>
+
+If we want to p(z) ~ N(0, 1), we use this regularization.
+<p align="center"> <img src="./img1/equation18.png" alt="MLE" width="70%" height="70%"/> </p>
