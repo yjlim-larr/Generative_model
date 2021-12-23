@@ -66,4 +66,6 @@ we can more easily calculate loss function
 
 ## Appendix B: calculate kl-divergence when gaussian case
 <p align="center"> <img src="./img1/equation18.png" alt="MLE" width="50%" height="50%"/> </p>
+epsilon is N(0,1), so p(z) is N(0, 1)  
+
 <p align="center"> <img src="./img1/equation17.png" alt="MLE" width="70%" height="70%"/> </p>
