@@ -40,11 +40,11 @@ https://arxiv.org/abs/1312.6114
   For example, imagine making random latent vector z and matching it 'x'
   
   when generator model is 'G' target image set is X and weight is 'theta', p(x) is defined like that 
-  <p align="center"> <img src="./img1/equation (7).png" alt="MLE" width="70%" height="70%"/> </p> 
+  <p align="center"> <img src="./img1/equation (7).png" alt="MLE" width="40%" height="40%"/> </p> 
   
   If we trained P(X) by using MLE method, we could train it by making pair (x_i, z_i) and calculated 'theta' for maximizing P(X).   But this method doesn't gurantee that network's output "predicted x" is target image's kind about new input z' not used for train. Because there is no relation between x and z.  
   
   For example, G(z_1) = x_1, G(z_2) = x_2, and G(z_3) = x_3. G is generator, and x_1, x_2, x_3 is predicted image. Assume distance function d, lower d(x,y) closer x and y. 
-  <mark> If d(x_1, x_2) > d(x_2, x_3) is correct, does it gurantee that d(z_1, z_2) > d(z_2, z_3)? Can we compare z_1, z_2 and z_3? </mark>
+  <mark>If d(x_1, x_2) > d(x_2, x_3) is correct, does it gurantee that d(z_1, z_2) > d(z_2, z_3)? Can we compare z_1, z_2 and z_3?</mark>
   
   When we train that network by using MLE, we do not define relationship between x and z. We just random match x and z. 
