@@ -38,31 +38,31 @@ Because, q(z|x) is not differentiable. To explain this detail, we use z that is 
 But there is no back propagation of randomly sampling because randomly sampling is not differentiable operation.  
 
 For backpropagtion, paper use indirectly random sampling by using **epsilon ~ N(0,1)**. z is calculated as follows.
-<p align="center"> <img src="./img1/equation10.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation10.png" alt="MLE" width="50%" height="50%"/> </p> 
 By using this form, we can calculate the effect of mu and sigma to 'z'
 
 So the main form of approximation to first term in loss function is like that
-<p align="center"> <img src="./img1/equation11.png" alt="MLE" width="100%" height="100%"/> </p> 
+<p align="center"> <img src="./img1/equation11.png" alt="MLE" width="70%" height="70%"/> </p> 
 
 There is two version of approximation of loss function
 1) First is to consider kl-divergence, and  
 2) the other on is not to consider Kl-divergeonce only calculated **Monte Carlo estimate of the expectation**. Because KL-divergence in loss function can be integrated analytically, so only the expected reconstruction error requires estimation by sampling.
-<p align="center"> <img src="./img1/equation12.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation12.png" alt="MLE" width="50%" height="50%"/> </p> 
 
 Use minibatch, the loss function is finally calculated like that
-<p align="center"> <img src="./img1/equation13.png" alt="MLE" width="70%" height="70%"/> </p> 
+<p align="center"> <img src="./img1/equation13.png" alt="MLE" width="50%" height="50%"/> </p> 
 X set size is N and, sampling 'M' datapoints for estimating loss function. 
 
 Use calculated loss function and, calculated gradient. This is the all process for getting **monte carlo gradient estimation of loss function**
 
 ## reparametrization trick
 Becuase of transform q(z|x), lower bound estimation is defined like that, 
-<p align="center"> <img src="./img1/equation15.png" alt="MLE" width="100%" height="100%"/> </p>
+<p align="center"> <img src="./img1/equation15.png" alt="MLE" width="70%" height="70%"/> </p>
 z is sampled L times from one image x^(i)
 
 If we use **gaussian distribution q(z|x) ~ N(mu, sigma^2)**
 we can more easily calculate loss function
-<p align="center"> <img src="./img1/equation16.png" alt="MLE" width="100%" height="100%"/> </p>
+<p align="center"> <img src="./img1/equation16.png" alt="MLE" width="70%" height="70%"/> </p>
 
 ## Appendix B: calculate kl-divergence when gaussian case
-<p align="center"> <img src="./img1/equation17.png" alt="MLE" width="100%" height="100%"/> </p>
+<p align="center"> <img src="./img1/equation17.png" alt="MLE" width="70%" height="70%"/> </p>
