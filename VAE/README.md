@@ -1,5 +1,10 @@
 # VAE
-https://arxiv.org/abs/1312.6114
+Auto-Encoding Variational Bayes : https://arxiv.org/abs/1312.6114
+
+## abstract
+  **P(X)** : It is the distribution that explain what is X. For example we want to make dog image generator. P(X) should have high value when X = dog image. But it has low value when X = not dog image. 
+  **
+
 
 ## Traditional probabilistic model training method 
 ### MLE  
@@ -57,3 +62,4 @@ https://arxiv.org/abs/1312.6114
   
   
 ### Decoder
+  
