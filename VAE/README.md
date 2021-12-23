@@ -23,9 +23,7 @@ https://arxiv.org/abs/1312.6114
   
   * classification form
   <p align="center"> <img src="./img1/equation (4).png" alt="MLE" width="60%" height="60%"/> </p> 
-  
-  
-    
+ 
 ### 2. MAP
   MAP use bayesian rule
   <p align="center"> <img src="./img1/equation (5).png" alt="MLE" width="40%" height="40%"/>
