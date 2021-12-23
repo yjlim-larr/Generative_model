@@ -6,6 +6,8 @@ https://arxiv.org/abs/1312.6114
   If set X is given like X = {x1, x2, ..., xn}, we can define P(X) which probability that X will be extracted is max.  
   We make P(X) by using neural network and, define that weight 'W', we can write it as P(X|W).  
   W is calculated by  
-  ![equation](./img/screenshot.png)
-  
+  <center>
+  ![equation](./img1/equation.png)
+  </center>  
+    
 2) MAP  
