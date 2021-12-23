@@ -56,7 +56,15 @@ X set size is N and, sampling 'M' datapoints for estimating loss function.
 Use calculated loss function and, calculated gradient. This is the all process for getting **monte carlo gradient estimation of loss function**
 
 ## reparametrization trick
+Becuase of transform q(z|x), lower bound estimation is defined like that, 
+<p align="center"> <img src="./img1/equation15.png" alt="MLE" width="20%" height="20%"/> </p>
+**z is sampled L times from one image x^(i)**
 
+If we use **gaussian distribution q(z|x) ~ N(mu, sigma^2)**
+we can more easily calculate loss function
+<p align="center"> <img src="./img1/equation16.png" alt="MLE" width="20%" height="20%"/> </p>
+
+## Appendix B: calculate kl-divergence when gaussian case
 
 
 ## Train order
