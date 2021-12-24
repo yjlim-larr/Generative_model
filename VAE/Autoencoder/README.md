@@ -70,3 +70,7 @@ epsilon is N(0,1), so p(z) is N(0, 1). Therefore,
 
 And we choose arbitary probability distribution as gaussian distribution, so
 <p align="center"> <img src="./img1/equation17.png" alt="MLE" width="70%" height="70%"/> </p>
+
+# Implementation 
+1) **kl-divergence** : paper explain how to calculate that term. J is the latent vector z's length. 
+2) **reconstrunction error** : Using encoder's ouptut "mean, and sigma" for generating z. mean and sigma's size is [batch_size, z_dim]. Sampling N times for generate 'z', so generated 'z' size is [batchsize, sampling times, z_dimension]. 
