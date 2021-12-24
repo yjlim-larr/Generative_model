@@ -75,4 +75,4 @@ And we choose arbitary probability distribution as gaussian distribution, so
 1) **kl-divergence** : paper explain how to calculate that term. J is the latent vector z's length. 
 2) **reconstrunction error** : Using encoder's ouptut "mean, and sigma" for generating z. mean and sigma's size is [batch_size, z_dim]. Sampling N times for generate 'z', so generated 'z' size is [batchsize, sampling times, z_dimension]. 
 
-In loss function regularization term, mu^2 and sigma^2 is minimized so, we can expect that term become zero. So After finish training, i use make z **torch.randn(batchsize, z_dimension)** to create fake image
+In loss function regularization term, mu^2 and sigma^2 is minimized so, we can expect that term become zero. So After finish training, i use **torch.randn(batchsize, z_dimension)** to make z and create fake image
