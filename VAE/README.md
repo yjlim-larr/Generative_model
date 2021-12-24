@@ -2,12 +2,17 @@
 1) Auto-Encoding Variational Bayes : https://arxiv.org/abs/1312.6114
 2) beta-VAE: https://openreview.net/forum?id=Sy2fzU9gl
 
-## 1. summary
+## 1. Terms
   **P(X)** : It is the distribution that explain what is X. For example we want to make dog image generator. P(X) should have high value when X = "dog image". But it has low value when X = "not dog image".  
   
   **P(X|theta)** : Theta is network weight, so P(X|theta) means deep network.  
   
-  VAE goal is to train P(X|theta)'s "theta" for making output image which we want to focus such as target image.
+  **p(Z)** : It is prior probability, but we don't know that, so we decide shape arbitrarily and approximate p(z) to q(z|x).
+  
+  **q(z|X)** : It is the core concept of VAE paper. We don't know what is data distribution, so we assume q(z|x) specific data distribution such as normal, uniform distribution and so on. q(z|x) is approximate probability distribution of p(z).  
+  
+  VAE's goal is to make data distribution by training prior probability p(z) and posterior probability p(x|z)
+  for making output image which we want to focus such as target image. It seems same to MAP.
   
   
 ## 2. Traditional probabilistic model training method 
@@ -50,7 +55,7 @@
   
   
   
-## 3. What is differnece between VAE and MAP, MLE ?
+## 3. What is differnece between VAE and MLE ?
   Why use variational inference for training in VAE? Why just use MLE for training that model?  
   For example, imagine making random latent vector z and matching it 'x'
   
@@ -71,6 +76,9 @@
   
 ### 3-2) Decoder
  Decoder is to make target image by using latent code made by encoder. 
+ 
+
+Encoder, decoder process is equal to prior probability and likelihood probability.
  
 ## 4. What is differnece between GAN and VAE ?
  
