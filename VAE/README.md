@@ -69,16 +69,13 @@
   
   So, We use sampling function for giving relationship between z and x. 
   
-  To implement VAE, paper suggest encoder and decoder method. So in this VAE code, i use encoder, decoder method to implement VAE.
+  To implement VAE, paper suggest encoder and decoder method. So in this VAE code, i use encoder, decoder method to implement VAE. Encoder, decoder process is equal to prior probability and likelihood probability.
   
 ### 3-1) Encoder
   Encoder is defined q(z|x) in VAE, and its fuction is sampling z from x for making relationship x and z. So we do not need to randomly match x and z for training. It solves the problem of training network by using MLE method.   
   
 ### 3-2) Decoder
  Decoder is to make target image by using latent code made by encoder. 
- 
-
-Encoder, decoder process is equal to prior probability and likelihood probability.
  
 ## 4. What is differnece between GAN and VAE ?
  
