@@ -6,9 +6,3 @@ CGAN
 infoGAN  
 
 DCGAN  
-
-# 
-make GAN model by using pytorch
-
-# reference
-
