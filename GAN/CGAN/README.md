@@ -9,7 +9,7 @@ Y is the label of MNIST, and it induce generator generate specific fake image
 In this implementation, i refer the model suggested in the paper.  
 <p align="center"> <img src="./img/CGAN_model.png" alt="MLE" width="40%" height="40%"/> </p>
 
-1) y dimension is 10 becasuse in this paper, it uses one hot vectors of label. MNIST image's number range is [0, 9] , so vector dimension is 10.
+1) y's dimension is 10 becasuse in this paper, it uses one hot vectors of label. MNIST image's number range is [0, 9] , so vector dimension is 10.
 
 2) Latent vector z dimension 100 was drawn from a uniform distribution. Both z and y are mapped to hidden layers with Rectified Linear Unit
 (ReLu) activation, with layer sizes 200 and 1000 respectively, before both being mapped to second, combined hidden ReLu layer of dimensionality 1200. We then have a final sigmoid unit layer as our output for generating the 784-dimensional MNIST samples.
