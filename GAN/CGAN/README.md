@@ -6,6 +6,11 @@ Y is the label of MNIST, and it induce generator generate specific fake image
 <p align="center"> <img src="./img/CGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
 
 # Model
+## Maxout layer
+  In this paper, for making Discriminator it uses maxout layer.
+  
+  
+## Network design
 In this implementation, i refer the model suggested in the paper.  
 <p align="center"> <img src="./img/CGAN_model.png" alt="MLE" width="40%" height="40%"/> </p>
 
