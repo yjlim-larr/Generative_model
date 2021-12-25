@@ -9,7 +9,7 @@ But VAE, we determine encoder's probability distribution for training such as no
 
 
 # Loss function 
-
+<p align="center"> <img src="./img1/lossfunction.png" alt="MLE" width="50%" height="50%"/> </p>
 
 
 # Result
