@@ -1,10 +1,12 @@
 # Summary
 "Generator" generate fake image and, Discriminator judge that image is real or fake. For training Discriminator, we should use real image for teaching what is real. 
 JS divergence is used to loss function. Paper use that metric function for judging two probability distribution is close or not.  
-Read Data distribution which is not known
-<< 알려지지 않은 데이터 분포를, normal distribution으로 무작위 추출한 Z에 대해 P(z) - > data 가 되도록 P_g(Z)을 P data으로 만들게끔 학습시킴
-<< 이점이 VAE와의 차이점인데, P(X|Z)을 normal으로 설정한 vAE와 다르게 GAN은 P_g(X|Z)을 normal 으로 설정하지 않고 내재적으로 결정된다.
-주의할 점은 Z을 normal 에서 뽑아냈다 하더라도, P(X|Z)가 generator에선 normal 분포가 아니라는 것인데 << 그 이유는?
+
+Generator(P(Z|X)) can be close to Real data distribution which is not known, and we don't need to select specific probability distribution for matching. This is the main difference between VAE and GAN. VAE explicitly determine probability distribution, but GAN doesn't
+
+**Note**: 'z' is sampled from N(0,1) or other things, not gurantee that Generator P(X|Z) is normal distribution.  
+But VAE, we determine encoder's probability distribution for training such as normal distribution. But we don't need to determine decoder's probability distribution. I think there is the tendency that decoder's probability distribution follows encoder's probability distribution shape if their network layer is symmetric.
+
 
 # Loss function 
 
@@ -18,5 +20,9 @@ Read Data distribution which is not known
  I can get this result from main.py  
  
 # Problem
+ 1) No need to generate various kind target image. For example, Uinsg MNIST to train, Generator could generate only '0' image, because it is enough to make discriminator confused. 
+ 2) Discriminator's training rate is more faster than Generator. Discriminator's dimension is lower than Generator because Discriminator only judge it is real and fake. So if D is optimal but G is not, there can be a problem of gradient vanishing.  
+ pf)
+
 
 # Reference
