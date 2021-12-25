@@ -77,5 +77,11 @@ And we choose arbitary probability distribution as gaussian distribution, so
 
 In loss function regularization term, mu^2 and sigma^2 is minimized so, we can expect that term become zero. So After finish training, i use **torch.randn(batchsize, z_dimension)** to make z and create fake image
 
+# Result
+train.py train model and, main.py evaluate model. Result is like that
+<p align="center"> <img src="./img1/VAE_result.png" alt="MLE" width="100%" height="100%"/> </p>
+
+First row is generated image of decoder, Second row is input MNIST image
+
 # Reference
 model: https://github.com/lyeoni/pytorch-mnist-VAE/blob/master/pytorch-mnist-VAE.ipynb
