@@ -1,7 +1,9 @@
 # Summary
+"Generator" generate fake image and, Discriminator judge that image is real or fake. For training Discriminator, we should use real image for teaching what is real. 
+JS divergence is used to loss function. Paper use that metric function for judging two probability distribution is close or not.  
 
 # Loss function 
-Using JS divergence 
+
 
 
 # Result
