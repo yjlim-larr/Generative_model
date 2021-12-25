@@ -3,10 +3,11 @@ Conditional generative adversarial nets (CGAN) is conditional version of gan. Us
 Y is the label of MNIST, and it induce generator generate specific fake image
 
 # Loss function
+<p align="center"> <img src="./img/CGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
 
 # Model
 In this implementation, i refer the model suggested in the paper.  
-<p align="center"> <img src="./img/CGAN_model.png" alt="MLE" width="80%" height="80%"/> </p>
+<p align="center"> <img src="./img/CGAN_model.png" alt="MLE" width="40%" height="40%"/> </p>
 
 1) y dimension is 10 becasuse in this paper, it uses one hot vectors of label. MNIST image's number range is [0, 9] , so vector dimension is 10.
 
