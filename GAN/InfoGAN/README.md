@@ -15,8 +15,6 @@ To solve this problem, it suggests an information-theoretic regularization: ther
 between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)) should be high. If mutual information is high, c is dependent on G(z,c). So we can know about G(z, c)'s information by using latent code c
 
 
-
-
 # Informaton theory
 ## entropy
 
@@ -40,16 +38,17 @@ between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)
 - We can measure how much dependent two random variable are, and how much they share mutual information, so we call it mutual information. 
 - Mutual information : I(x,y) = KL(p(x,y)||p(x)p(y)) = H(x) - H(x|y) = H(y) - H(y|x)  
 <p align="center"> <img src="./img/INFOGAN_mutualinformation.png" alt="MLE" width="70%" height="70%"/> </p>
-H(X) = X의 불확실한 정도. (=Y가 주어지지 않을 때 x의 불확실한 정도)
-H(X|Y) = Y가 주어졌을 때, X의 불확실한 정도.
-H(X) - H(X|Y) = Y로 인해 알아낸 X의 정보량.
+H(X) = X의 불확실한 정도. (=Y가 주어지지 않을 때 x의 불확실한 정도)  
+H(X|Y) = Y가 주어졌을 때, X의 불확실한 정도.  
+H(X) - H(X|Y) = Y로 인해 알아낸 X의 정보량.  
 
 if) X and Y is independent, H(X) - H(X|Y) = H(X) - H(X) = 0, because, if you know Y but you don't infer any information of X by using known Y.
 H(Y|X)'s value get lower accroding to how dependent X and Y are. So I(x;y)'s value get bigger because of I(x,y) is equal to H(y) - H(y|x).
 
 
 # Loss function
-<p align="center"> <img src="./img/CGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
+In the loss functoin, mutual iunformation term is higher when training, so it makes c and G(z, c) dependent.
 
 # Model
 ## Network design
