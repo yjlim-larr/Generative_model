@@ -78,3 +78,4 @@
  Decoder is to make target image by using latent code made by encoder. 
  
 ## 4. What is differnece between GAN and VAE ?
+VAE explicitly determines which probability to use. But Gan doesn't. This is the biggest different point. GAN's generator find the real data distribution by itself while training. **Note**: Gan's input noise is sampled from distribution which is determined by developer, but it doesn't mean explictly determined gan's generator's distribution.
