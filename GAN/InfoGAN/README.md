@@ -62,7 +62,6 @@ Lower bound is easy to approximate with Monte Carlo Simulation. But if we add th
 **minus Lower bound** is maximum when expected value is zero, so it is convergence to H(C), and it is the maximum value of lowerbound.
 
 # Model
-## Network design
  In most experiments, Q and D share all convolutional layers and there is one final fully connected layer to output parameters for the conditional distribution Q(c|x), which means InfoGAN only adds a negligible computation cost to GAN.  
  For categorical latent code c_i, we use the natural choice of **softmax** nonlinearity to represent Q(ci|x).  
 For continuous latent code c_j , there are more options depending on what is the true posterior P(cj |x).  
@@ -70,7 +69,7 @@ For continuous latent code c_j , there are more options depending on what is the
 In our experiments, we have found that simply treating Q(c_j |x) as a **factored Gaussian** is sufficient.
 Even though InfoGAN introduces an extra hyperparameter λ, it’s easy to tune and simply setting to 1 is sufficient for discrete latent codes. When the latent code contains continuous variables.
 
-<p align="center"> <img src="./img/INFOGAN_model.png" alt="MLE" width="50%" height="50%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_model.png" alt="MLE" width="70%" height="70%"/> </p>
 
 # Results
 
