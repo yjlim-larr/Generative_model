@@ -77,7 +77,6 @@ controls the width.
 We use leaky rectified linear units (lRELU) with leaky rate 0.1 as the nonlinearity applied to hidden layers of the discrminator networks, and normal rectified linear units (RELU) for the generator networks. Unless noted otherwise, learning rate is 2e-4 for D and 1e-3 for G; λ is set to 1.
 
 
-
 # Results
 <p align="center"> <img src="./img/INFO_result.png" alt="MLE" width="100%" height="100%"/> </p>
 
