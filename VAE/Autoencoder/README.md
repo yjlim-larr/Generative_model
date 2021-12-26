@@ -84,9 +84,4 @@ train.py train model and, main.py evaluate model. Result is like that
 First row is generated image of decoder, Second row is input MNIST image
 
 # Reference
-https://hugrypiggykim.com/2018/09/07/variational-autoencoder%EC%99%80-elboevidence-lower-bound/  
-http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-2.html  
-http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html  
-https://datascienceschool.net/view-notebook/c5248de280a64ae2a96c1d4e690fdf79/  
-https://ratsgo.github.io/generative%20model/2018/01/27/VAE/  
 model: https://github.com/lyeoni/pytorch-mnist-VAE/blob/master/pytorch-mnist-VAE.ipynb  
