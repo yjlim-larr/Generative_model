@@ -48,7 +48,17 @@ H(Y|X)'s value get lower accroding to how dependent X and Y are. So I(x;y)'s val
 
 # Loss function
 <p align="center"> <img src="./img/INFOGAN_lossfunction.png" alt="MLE" width="40%" height="40%"/> </p>
-In the loss functoin, mutual iunformation term is higher when training, so it makes c and G(z, c) dependent.
+In the loss functoin, mutual iunformation term is higher when training, so it makes c and G(z, c) dependent. And it means regularization term.
+
+I(c; G(z, c)) is hard to maximize directly as it requires access to the posterior P(c|x). Fortunately we can obtain a lower bound of it by defining an auxiliary distribution Q(c|x) to approximate P(c|x):
+<p align="center"> <img src="./img/INFOGAN_lowerbound.png" alt="MLE" width="40%" height="40%"/> </p>
+
+The entropy of latent codes H(c) can be optimized over as well since for common distributions it has a simple analytical form.  However in this paper, they treat it as a constant.  
+
+Lower bound is easy to approximate with Monte Carlo Simulation. But if we add this to GAN, does it change GAN's training procedure?  
+
+<p align="center"> <img src="./img/INFOGAN_lowerbound_lossfunction.png" alt="MLE" width="40%" height="40%"/> </p>
+
 
 # Model
 ## Network design
