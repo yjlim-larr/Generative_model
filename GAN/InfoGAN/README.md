@@ -11,7 +11,11 @@ we provide the generator network with both the incompressible noise z and the la
 generator becomes G(z, c). If we use the standard form of GAN, the the generator is free to ignore the additional
 latent code c by finding a solution satisfying P_G(x|c) = P_G(x). It means generator can generate fixed image.
 
-To solve this problem, it suggests an information-theoretic regularization:
+To solve this problem, it suggests an information-theoretic regularization: there should be high mutual information
+between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)) should be high. If mutual information is high, c is dependent on G(z,c). So we can know about G(z, c)'s information by using latent code c
+
+
+
 
 # Informaton theory
 ## entropy
