@@ -51,21 +51,26 @@ H(Y|X)'s value get lower accroding to how dependent X and Y are. So I(x;y)'s val
 In the loss functoin, mutual iunformation term is higher when training, so it makes c and G(z, c) dependent. And it means regularization term.
 
 I(c; G(z, c)) is hard to maximize directly as it requires access to the posterior P(c|x). Fortunately we can obtain a lower bound of it by defining an auxiliary distribution Q(c|x) to approximate P(c|x):
-<p align="center"> <img src="./img/INFOGAN_lowerbound.png" alt="MLE" width="40%" height="40%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_lowerbound.png" alt="MLE" width="70%" height="70%"/> </p>
 
 The entropy of latent codes H(c) can be optimized over as well since for common distributions it has a simple analytical form.  However in this paper, they treat it as a constant.  
 
 Lower bound is easy to approximate with Monte Carlo Simulation. But if we add this to GAN, does it change GAN's training procedure? Because, Lowerbound is directly calculated from Q which is gotten from G via reparametrization trick. It means generator in INFOGAN operate same to standart GAN. Just add new layer 'Q'
 
-<p align="center"> <img src="./img/INFOGAN_lowerbound_lossfunction.png" alt="MLE" width="40%" height="40%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_lowerbound_lossfunction.png" alt="MLE" width="50%" height="50%"/> </p>
 
 **minus Lower bound** is maximum when expected value is zero, so it is convergence to H(C), and it is the maximum value of lowerbound.
 
 # Model
 ## Network design
+ In most experiments, Q and D share all convolutional layers and there is one final fully connected layer to output parameters for the conditional distribution Q(c|x), which means InfoGAN only adds a negligible computation cost to GAN.  
+ For categorical latent code c_i, we use the natural choice of **softmax** nonlinearity to represent Q(ci|x).  
+For continuous latent code c_j , there are more options depending on what is the true posterior P(cj |x).  
 
+In our experiments, we have found that simply treating Q(c_j |x) as a **factored Gaussian** is sufficient.
+Even though InfoGAN introduces an extra hyperparameter λ, it’s easy to tune and simply setting to 1 is sufficient for discrete latent codes. When the latent code contains continuous variables.
 
-## Network reference
+<p align="center"> <img src="./img/INFOGAN_model.png" alt="MLE" width="50%" height="50%"/> </p>
 
 # Results
 
