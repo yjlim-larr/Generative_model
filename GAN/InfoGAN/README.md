@@ -81,8 +81,6 @@ We use leaky rectified linear units (lRELU) with leaky rate 0.1 as the nonlinear
 # Results
 <p align="center"> <img src="./img/INFO_result.png" alt="MLE" width="100%" height="100%"/> </p>
 
-# Problem
-
 # Reference
 https://ratsgo.github.io/statistics/2017/09/22/information/  
 https://hyunw.kim/blog/2017/10/14/Entropy.html  
