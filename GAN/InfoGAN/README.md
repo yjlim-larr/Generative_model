@@ -84,6 +84,6 @@ We use leaky rectified linear units (lRELU) with leaky rate 0.1 as the nonlinear
 # Problem
 
 # Reference
-https://ratsgo.github.io/statistics/2017/09/22/information/
-https://hyunw.kim/blog/2017/10/14/Entropy.html
+https://ratsgo.github.io/statistics/2017/09/22/information/  
+https://hyunw.kim/blog/2017/10/14/Entropy.html  
 https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/infogan/infogan.py
