@@ -37,7 +37,8 @@ between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)
 - In this equation, we can infer that, P(X,Y) = P(X)P(Y), kl-divergence is 0, so X and Y are independent.
 - We can measure how much dependent two random variable are, and how much they share mutual information, so we call it mutual information. 
 - Mutual information : I(x,y) = KL(p(x,y)||p(x)p(y)) = H(x) - H(x|y) = H(y) - H(y|x)  
-<p align="center"> <img src="./img/INFOGAN_mutualinformation.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_mutualinformation.png" alt="MLE" width="70%" height="70%"/> </p>  
+
 H(X) = X의 불확실한 정도. (=Y가 주어지지 않을 때 x의 불확실한 정도)  
 H(X|Y) = Y가 주어졌을 때, X의 불확실한 정도.  
 H(X) - H(X|Y) = Y로 인해 알아낸 X의 정보량.  
