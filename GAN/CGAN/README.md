@@ -26,7 +26,7 @@ and 4 pieces before being fed to the sigmoid layer.
 
 
 # Results
-<p align="center"> <img src="./img/CGAN_results.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img/CGAN_results.png" alt="MLE" width="100%" height="100%"/> </p>
 
 # Problem
 
