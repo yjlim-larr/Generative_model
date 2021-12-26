@@ -84,4 +84,5 @@ train.py train model and, main.py evaluate model. Result is like that
 First row is generated image of decoder, Second row is input MNIST image
 
 # Reference
+paper: https://arxiv.org/abs/1312.6114  
 model: https://github.com/lyeoni/pytorch-mnist-VAE/blob/master/pytorch-mnist-VAE.ipynb  
