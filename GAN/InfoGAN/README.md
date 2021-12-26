@@ -47,7 +47,7 @@ H(Y|X)'s value get lower accroding to how dependent X and Y are. So I(x;y)'s val
 
 
 # Loss function
-<p align="center"> <img src="./img/INFOGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_lossfunction.png" alt="MLE" width="40%" height="40%"/> </p>
 In the loss functoin, mutual iunformation term is higher when training, so it makes c and G(z, c) dependent.
 
 # Model
