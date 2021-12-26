@@ -31,4 +31,5 @@ and 4 pieces before being fed to the sigmoid layer.
 # Problem
 
 # Reference
-https://arxiv.org/pdf/1411.1784.pdf  
+paper: https://arxiv.org/pdf/1411.1784.pdf  
+Generator, Discriminator model:  https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/infogan/infogan.py 
