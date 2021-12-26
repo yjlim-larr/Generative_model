@@ -28,7 +28,7 @@ between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)
 - It measures two distribution's shape and support is close or not .
 - For example, P(x) and Q(x)'s shape and support is closer, kl-divergence's value is lower.
 - It is calculated, 
-<p align="center"> <img src="./img/INFOGAN_kldivergence.png" alt="MLE" width="70%" height="70%"/> </p>
+<p align="center"> <img src="./img/INFOGAN_kldivergence.png" alt="MLE" width="40%" height="40%"/> </p>
 
 - Note: KL(Q||P) is not equal to KL(P||Q). So it doesn't satisfy distance function's property.
 
