@@ -70,6 +70,10 @@ In our experiments, we have found that simply treating Q(c_j |x) as a **factored
 Even though InfoGAN introduces an extra hyperparameter λ, it’s easy to tune and simply setting to 1 is sufficient for discrete latent codes. When the latent code contains continuous variables.
 
 <p align="center"> <img src="./img/INFOGAN_model.png" alt="MLE" width="70%" height="70%"/> </p>
+one categorical code, c1 ∼ Cat(K = 10, p = 0.1), which can model discontinuous variation in data, and
+two continuous codes that can capture variations that are continuous in nature: c2, c3 ∼ Unif(−1, 1). Continuous codes c2, c3 capture continuous variations in style: c2 models rotation of digits and c3
+controls the width.
+
 
 # Results
 
