@@ -55,10 +55,11 @@ I(c; G(z, c)) is hard to maximize directly as it requires access to the posterio
 
 The entropy of latent codes H(c) can be optimized over as well since for common distributions it has a simple analytical form.  However in this paper, they treat it as a constant.  
 
-Lower bound is easy to approximate with Monte Carlo Simulation. But if we add this to GAN, does it change GAN's training procedure?  
+Lower bound is easy to approximate with Monte Carlo Simulation. But if we add this to GAN, does it change GAN's training procedure? Because, Lowerbound is directly calculated from Q which is gotten from G via reparametrization trick. It means generator in INFOGAN operate same to standart GAN. Just add new layer 'Q'
 
 <p align="center"> <img src="./img/INFOGAN_lowerbound_lossfunction.png" alt="MLE" width="40%" height="40%"/> </p>
 
+**minus Lower bound** is maximum when expected value is zero, so it is convergence to H(C), and it is the maximum value of lowerbound.
 
 # Model
 ## Network design
