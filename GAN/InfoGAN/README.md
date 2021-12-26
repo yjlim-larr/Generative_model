@@ -74,6 +74,9 @@ one categorical code, c1 ∼ Cat(K = 10, p = 0.1), which can model discontinuous
 two continuous codes that can capture variations that are continuous in nature: c2, c3 ∼ Unif(−1, 1). Continuous codes c2, c3 capture continuous variations in style: c2 models rotation of digits and c3
 controls the width.
 
+We use leaky rectified linear units (lRELU) with leaky rate 0.1 as the nonlinearity applied to hidden layers of the discrminator networks, and normal rectified linear units (RELU) for the generator networks. Unless noted otherwise, learning rate is 2e-4 for D and 1e-3 for G; λ is set to 1.
+
+
 
 # Results
 
