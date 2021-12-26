@@ -20,15 +20,33 @@ between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)
 # Informaton theory
 ## entropy
 
-## kl divergence
-
-## cross entropy
+## conditional entropy
 
 ## joint entropy
 
-## conditional entropy 
+## kl divergence
+- It measures two distribution's shape and support is close or not .
+- For example, P(x) and Q(x)'s shape and support is closer, kl-divergence's value is lower.
+- It is calculated, 
+<p align="center"> <img src="./img/INFOGAN_kldivergence.png" alt="MLE" width="70%" height="70%"/> </p>
+
+- Note: KL(Q||P) is not equal to KL(P||Q). So it doesn't satisfy distance function's property.
 
 ## mutual information
+- It means the method of measuring how much mutual dependency two random variables are. 
+- If random variable x and y is independent, joint distribution p(x,y) is equal to p(x)p(y)
+- Mutual information's formula is equal to KL(P(x,y) || P(X)P(Y))
+- In this equation, we can infer that, P(X,Y) = P(X)P(Y), kl-divergence is 0, so X and Y are independent.
+- We can measure how much dependent two random variable are, and how much they share mutual information, so we call it mutual information. 
+- Mutual information : I(x,y) = KL(p(x,y)||p(x)p(y)) = H(x) - H(x|y) = H(y) - H(y|x)  
+<p align="center"> <img src="./img/INFOGAN_mutualinformation.png" alt="MLE" width="70%" height="70%"/> </p>
+H(X) = X의 불확실한 정도. (=Y가 주어지지 않을 때 x의 불확실한 정도)
+H(X|Y) = Y가 주어졌을 때, X의 불확실한 정도.
+H(X) - H(X|Y) = Y로 인해 알아낸 X의 정보량.
+
+if) X and Y is independent, H(X) - H(X|Y) = H(X) - H(X) = 0, because, if you know Y but you don't infer any information of X by using known Y.
+H(Y|X)'s value get lower accroding to how dependent X and Y are. So I(x;y)'s value get bigger because of I(x,y) is equal to H(y) - H(y|x).
+
 
 # Loss function
 <p align="center"> <img src="./img/CGAN_lossfunction.png" alt="MLE" width="70%" height="70%"/> </p>
@@ -42,5 +60,7 @@ between **latent codes c and generator distribution G(z, c).** Thus I(c; G(z, c)
 # Results
 
 # Problem
-a
+
 # Reference
+https://ratsgo.github.io/statistics/2017/09/22/information/
+https://hyunw.kim/blog/2017/10/14/Entropy.html
