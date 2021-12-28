@@ -17,6 +17,9 @@ loss function으로 부터 신경망의 모수를 수렴시키면, 해당 모수
 2. KL divergence
 3. JS divergence
 4. EM distanve or Wasserstein-1
+<p align="center"> <img src="./img/WGAN_dis.png" alt="MLE" width="50%" height="50%"/> </p>
+
+
 
 
 
