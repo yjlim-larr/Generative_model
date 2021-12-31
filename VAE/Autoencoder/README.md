@@ -83,6 +83,8 @@ train.py train model and, main.py evaluate model. Result is like that
 
 First row is generated image of decoder, Second row is input MNIST image
 
+Generated images are blurry than GAN. I think on reparametrization trick, noise from epsilon makes image blurry. In other words, small change in latent vector because of noise makes image bluury. It is main problem of explicit distribution model.
+
 # Reference
 paper: https://arxiv.org/abs/1312.6114  
 model: https://github.com/lyeoni/pytorch-mnist-VAE/blob/master/pytorch-mnist-VAE.ipynb  
