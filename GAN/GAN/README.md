@@ -26,7 +26,7 @@ But VAE, we determine encoder's probability distribution for training such as no
  **pf)** when discriminator is optimal loss function is defined like that
   <p align="center"> <img src="./img1/optimalD_lossfunction.png" alt="MLE" width="30%" height="30%"/> </p>
   
-  Generator probability is function of theta, so Loss function can be seen like Loss = f(theta). JS diverence is depend on support(x-domian) so, if there is no intersected support between P_real and P_Generator JS valuse is infinite. In that area JS value is constant(but infinite), gradient is convergent to zero, so training doesn't go well. 
+  Generator probability is function of theta, so Loss function can be seen like Loss = f(theta). JS diverence is depend on support(x-domian) so, if there is no intersected support between P_real and P_Generator JS valuse is infinite. In that area JS value is constant(but infinite), gradient is convergent to zero, so training doesn't go well.  
   **Note** : P_real and P_Generator are added noise, so they has not zero probability on all support, therefore meaningful support is judged if on that support it has a meaningful probability.  
 
 
