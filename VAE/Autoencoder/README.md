@@ -30,7 +30,7 @@ loss function is like that
 
 # Calculate loss function gradient
 using **Monte carlo gradient estimator** for caculating loss function gradient. For example 
-<p align="center"> <img src="./img1/equation8.png" alt="MLE" width="100%" height="100%"/> </p> 
+<p align="center"> <img src="./img1/equation8.png" alt="MLE" width="80%" height="80%"/> </p> 
 
 And for making differentiable funciton, transform q(z|x).
 <p align="center"> <img src="./img1/equation9.png" alt="MLE" width="40%" height="40%"/> </p> 
@@ -47,7 +47,7 @@ So the main form of approximation to first term in loss function is like that
 There is two version of approximation of loss function
 1) First is to consider kl-divergence, and  
 2) the other on is not to consider Kl-divergeonce only calculated **Monte Carlo estimate of the expectation**. Because KL-divergence in loss function can be integrated analytically, so only the expected reconstruction error requires estimation by sampling.
-<p align="center"> <img src="./img1/equation12.png" alt="MLE" width="50%" height="50%"/> </p> 
+<p align="center"> <img src="./img1/equation12.png" alt="MLE" width="70%" height="70%"/> </p> 
 
 Use minibatch, the loss function is finally calculated like that
 <p align="center"> <img src="./img1/equation13.png" alt="MLE" width="50%" height="50%"/> </p> 
