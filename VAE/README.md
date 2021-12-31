@@ -35,10 +35,10 @@
   But that mathematical expression includes predicted value.
 
   * regression form
-  <p align="center"> <img src="./img1/equation (3).png" alt="MLE" width="70%" height="70%"/> </p> 
+  <img src="./img1/equation (3).png" alt="MLE" width="70%" height="70%"/>
 
   * classification form
-  <p align="center"> <img src="./img1/equation (4).png" alt="MLE" width="60%" height="60%"/> </p> 
+  <img src="./img1/equation (4).png" alt="MLE" width="60%" height="60%"/>
   
   
   
